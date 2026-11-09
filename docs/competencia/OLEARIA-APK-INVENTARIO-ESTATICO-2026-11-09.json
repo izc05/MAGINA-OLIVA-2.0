@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-11-09",
+  "source_type": "user-supplied private APK archive",
+  "analysis_type": "static metadata only",
+  "copyright_note": "metadata only: no APK, JS bytecode, reconstituted source or third-party files published",
+  "confidence_legend": {
+    "binary": "present in APK/manifests/DEX/resources",
+    "config": "present in Expo configuration",
+    "inference": "not proven in runtime",
+    "unknown": "requires authorized functional test"
+  },
+  "archive": {
+    "name": "Olearia Agritech.zip",
+    "size_bytes": 150019914,
+    "sha256": "d4c232f8b687e4bd02eccd041917c85f7419ebd0ff14a5205ea18d967af791d6"
+  },
+  "apks": [
+    {
+      "name": "base.apk",
+      "bytes": 97016010,
+      "sha256": "0e1bc58ce0c50dfac4da937276fcd314610137090dfa09be97627f9fc8308049",
+      "zip_entries": 1279
+    },
+    {
+      "name": "split_config.arm64_v8a.apk",
+      "bytes": 52698103,
+      "sha256": "5e55deacea7ba95e8c84b3810ab52f3a6eae3cab1bfa9a5b3020418be2f67fd9",
+      "zip_entries": 39
+    },
+    {
+      "name": "split_config.es.apk",
+      "bytes": 98713,
+      "sha256": "7055f3994262672c4d1ec5f8019572b7e88fc4e8d2ab885d921462d9fb17a790",
+      "zip_entries": 6
+    },
+    {
+      "name": "split_config.xxhdpi.apk",
+      "bytes": 182840,
+      "sha256": "a6087c682a58559d7f44c9b891587a7e9518fab5a3248cf16193eccefb18c67e",
+      "zip_entries": 102
+    }
+  ],
+  "app": {
+    "package": "io.olearia.agritech",
+    "version": "1.5.2",
+    "version_code": 40,
+    "expo_sdk_config": "57.0.0",
+    "android_min_sdk": 24,
+    "android_target_sdk": 36,
+    "android_compile_sdk": 36
+  },
+  "static_sizes": {
+    "dex_file_count": 9,
+    "dex_class_definition_count": 58066,
+    "hermes_bundle_bytes": 17504504,
+    "arm64_native_so_count": 34,
+    "mlkit_tflite_model_count": 3
+  },
+  "components": {
+    "activity_count": 14,
+    "provider_count": 10,
+    "service_count": 10,
+    "receiver_count": 6,
+    "explicitly_exported": [
+      {
+        "type": "activity",
+        "name": "io.olearia.agritech.MainActivity"
+      },
+      {
+        "type": "receiver",
+        "name": "com.amazon.device.iap.ResponseReceiver"
+      },
+      {
+        "type": "receiver",
+        "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver"
+      },
+      {
+        "type": "receiver",
+        "name": "androidx.profileinstaller.ProfileInstallReceiver"
+      }
+    ]
+  },
+  "backup": {
+    "allow_backup": true,
+    "secure_store_sharedpref_excluded_from_backup": true,
+    "secure_store_sharedpref_excluded_from_device_transfer": true,
+    "other_preferences_content_verified": false
+  },
+  "expo_updates": {
+    "manifest_enabled": false
+  },
+  "permissions": [
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.CAMERA",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_LOCATION",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "io.olearia.agritech.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.sec.android.provider.badge.permission.READ",
+    "com.sec.android.provider.badge.permission.WRITE",
+    "com.htc.launcher.permission.READ_SETTINGS",
+    "com.htc.launcher.permission.UPDATE_SHORTCUT",
+    "com.sonyericsson.home.permission.BROADCAST_BADGE",
+    "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+    "com.anddoes.launcher.permission.UPDATE_COUNT",
+    "com.majeur.launcher.permission.UPDATE_BADGE",
+    "com.huawei.android.launcher.permission.CHANGE_BADGE",
+    "com.huawei.android.launcher.permission.READ_SETTINGS",
+    "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+    "android.permission.READ_APP_BADGE",
+    "com.oppo.launcher.permission.READ_SETTINGS",
+    "com.oppo.launcher.permission.WRITE_SETTINGS",
+    "me.everything.badger.permission.BADGE_COUNT_READ",
+    "me.everything.badger.permission.BADGE_COUNT_WRITE",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "native_libraries": [
+    "libandroidx.graphics.path.so",
+    "libanimation-decoder-gif.so",
+    "libappmodules.so",
+    "libavif_android.so",
+    "libbarhopper_v3.so",
+    "libc++_shared.so",
+    "libdatastore_shared_counter.so",
+    "libexpo-modules-core.so",
+    "libfbjni.so",
+    "libgesturehandler.so",
+    "libgifimage.so",
+    "libhermestooling.so",
+    "libhermesvm.so",
+    "libimage_processing_util_jni.so",
+    "libimagepipeline.so",
+    "libjsi.so",
+    "libmaplibre.so",
+    "libnative-filters.so",
+    "libnative-imagetranscoder.so",
+    "libreact_codegen_RNKC.so",
+    "libreact_codegen_rnscreens.so",
+    "libreact_codegen_rnsvg.so",
+    "libreact_codegen_safeareacontext.so",
+    "libreactnative.so",
+    "libreanimated.so",
+    "librnscreens.so",
+    "librnskia.so",
+    "libsentry-android.so",
+    "libsentry-tm-perf-logger.so",
+    "libsentry.so",
+    "libstatic-webp.so",
+    "libsurface_util_jni.so",
+    "libworklets.so",
+    "libzstd-kmp.so"
+  ],
+  "expo_plugins_config": [
+    "./plugins/withSDK57AppDelegate",
+    "./plugins/withReleaseSigning",
+    "./plugins/withPushEnvironment",
+    "./plugins/withGradleMemory",
+    "expo-apple-authentication",
+    "expo-secure-store",
+    "expo-web-browser",
+    "expo-notifications",
+    "expo-location",
+    "expo-camera",
+    "expo-image-picker",
+    "@maplibre/maplibre-react-native",
+    "expo-quick-actions",
+    "expo-audio",
+    "expo-local-authentication",
+    "expo-font",
+    "expo-video",
+    "expo-speech-recognition",
+    "expo-splash-screen"
+  ],
+  "app_link_path_prefixes": [
+    "/dashboard",
+    "/portfolio",
+    "/field-book",
+    "/asistente",
+    "/advisor",
+    "/huella",
+    "/mensajes",
+    "/machinery",
+    "/settings",
+    "/documents",
+    "/documentos",
+    "/cooperativa",
+    "/mis-agricultores",
+    "/mis-asesores",
+    "/compliance",
+    "/estadisticas",
+    "/trabajo",
+    "/team",
+    "/help",
+    "/traer-datos",
+    "/contratos",
+    "/encargos",
+    "/actividad",
+    "/pasaporte",
+    "/perfil",
+    "/cartilla",
+    "/worker-link",
+    "/conectar",
+    "/c/",
+    "/connect",
+    "/agritech/entrar"
+  ],
+  "identified_tech": {
+    "react_native": "binary",
+    "expo": "binary",
+    "hermes": "binary",
+    "maplibre": "binary",
+    "skia": "binary",
+    "firebase_messaging": "binary",
+    "sentry": "binary",
+    "revenuecat": "binary",
+    "google_play_billing_version": "8.3.0",
+    "mlkit_barcode_version": "17.3.0",
+    "mlkit_document_scanner_version": "16.0.0",
+    "asyncstorage": "binary",
+    "expo_sqlite": "not identified",
+    "room": "not identified",
+    "ocr_text_engine": "not established",
+    "iuws_operational_status": "not established"
+  },
+  "scope_limitations": [
+    "No application execution or network interception performed",
+    "No full APK signature chain verification",
+    "No backend/source repository access",
+    "String presence does not imply active feature",
+    "License/protection functionality untouched",
+    "No official compliance or security certification inferred"
+  ]
+}
