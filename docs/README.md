@@ -20,6 +20,11 @@
 - [Registro de fuentes, contradicciones y pendientes FEGA](normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
 
 ### Competencia y posicionamiento
+- **[Índice de competencia y dossier Olearia](competencia/README.md)** — punto de entrada recomendado.
+- **[Dossier maestro de evidencias de Olearia 1.5.2](competencia/OLEARIA-DOSSIER-MAESTRO-EVIDENCIAS-2026-11-09.md)** — resumen auditado y límites.
+- [Catálogo JSON de 22 afirmaciones con su estado de verificación](competencia/OLEARIA-CATALOGO-EVIDENCIAS-ESTADOS-2026-11-09.json)
+- [Manifiesto Android: componentes, permisos, backup y privacidad](competencia/OLEARIA-ANDROID-COMPONENTES-PERMISOS-Y-PRIVACIDAD-2026-11-09.md)
+- [Manual de análisis APK local seguro para Codex](../tools/research/README.md)
 - [Olearia: cuarta auditoría de offline, NetInfo, ROPO/BBCH, WMS/WMTS y enlaces Android](competencia/OLEARIA-ANALISIS-RED-OFFLINE-ENLACES-2026-11-09.md)
 - [Herramienta reproducible de inventario estático de APK para Codex](../tools/research/apk_metadata_audit.py)
 - [Olearia: contraste de web comercial, privacidad, seguridad declarada y APK 1.5.2](competencia/OLEARIA-CONTRASTE-WEB-APK-Y-SEGURIDAD-2026-11-09.md)
