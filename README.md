@@ -45,3 +45,7 @@ Las decisiones y cambios de código se registrarán mediante ramas y PR revisada
 **Regla vigente:** papel fitosanitario hasta 31/12/2026 y registro digital desde 01/01/2027; el CUE digital general es voluntario salvo obligación sectorial. **No bloquear borradores locales sin REAFA; bloquear vinculación/envío oficial** hasta comprobación de identidad y autorización. Separar siempre `PRIVATE_SYNCED` de `OFFICIAL_ACCEPTED`.
 
 **NO-GO transporte oficial:** las descargas del FEGA **Anexo V 3.11 XLSX** y **Anexo VI IUWS 3.11.4 DOCX** están localizadas pero todavía **no se han extraído íntegramente**. Hasta entonces, no codificar mensajes/endpoints oficiales ni afirmar homologación de Mágina Olivo.
+
+## Centro documental de referencia
+
+**[Abrir índice maestro de documentación y normas de mantenimiento](docs/README.md)**. Toda investigación, arquitectura, decisión, requisito de normativa y evidencia de pruebas debe guardarse en GitHub con enlaces a fuentes, fecha y estado de verificación. La documentación de la PR #10 está todavía en una rama, no en `main`.
