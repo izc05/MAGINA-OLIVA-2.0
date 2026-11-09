@@ -31,3 +31,17 @@ Las decisiones y cambios de código se registrarán mediante ramas y PR revisada
 3. [Arquitectura Expo/React, offline, benchmark y migración V1→V2](docs/arquitectura/DECISIONES-MULTIPLATAFORMA-Y-MIGRACION-2026-11-09.md)
 
 **BLOQUEO:** aún falta extraer y mapear íntegramente el XLSX oficial Anexo V 3.11 y DOCX Anexo VI IUWS 3.11.4. No desarrollar transportes IUWS ni declarar validez administrativa antes de esa revisión y autorización oficial.
+
+## Dossier REAFA / SIEX / CUE — segunda entrega (09/11/2026)
+
+**Documentación comprobada y revisada a partir de la investigación facilitada por el promotor.** Empezar por estos documentos, que **corrigen** el calendario 2026 y las antiguas reglas de superficie:
+
+- [Cumplimiento REAFA/SIEX/CUE — matriz legal y criterios QA](docs/normativa/CUMPLIMIENTO-REAFA-SIEX-CUE-V2.md)
+- [Autorizaciones — software, productor individual y entidad habilitada / IUWS](docs/integraciones/ALTA-CUE-AUTORIZACIONES-IUWS-ANDALUCIA.md)
+- [Modelo de datos — explotaciones, recintos, actividades y sincronización](docs/arquitectura/MODELO-DE-DATOS-REAFA-SIEX-Y-CUE.md)
+- [Modelo oficial de cuaderno V9 — formularios 3.1 y 3.1 bis](docs/normativa/FORMULARIOS-ANDALUCIA-V9-TRAZABILIDAD.md)
+- [Registro de fuentes, errores del informe externo y bloqueos FEGA](docs/normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
+
+**Regla vigente:** papel fitosanitario hasta 31/12/2026 y registro digital desde 01/01/2027; el CUE digital general es voluntario salvo obligación sectorial. **No bloquear borradores locales sin REAFA; bloquear vinculación/envío oficial** hasta comprobación de identidad y autorización. Separar siempre `PRIVATE_SYNCED` de `OFFICIAL_ACCEPTED`.
+
+**NO-GO transporte oficial:** las descargas del FEGA **Anexo V 3.11 XLSX** y **Anexo VI IUWS 3.11.4 DOCX** están localizadas pero todavía **no se han extraído íntegramente**. Hasta entonces, no codificar mensajes/endpoints oficiales ni afirmar homologación de Mágina Olivo.
