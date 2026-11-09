@@ -22,3 +22,12 @@ Nueva etapa de Mágina Olivo: **cuaderno agrícola multiplataforma (Android, iOS
 - [FEGA — Documentación Técnica Agrícola SIEX](https://www.fega.gob.es/es/siex/documentacion-tecnica-agricola-siex)
 
 Las decisiones y cambios de código se registrarán mediante ramas y PR revisadas.
+## Auditoría normativa y técnica (09/11/2026)
+
+**LEER ESTOS DOCUMENTOS ANTES DE PROGRAMAR**. El informe de investigación externo contenía fechas normativas antiguas (2024/2025). La revisión usa BOE/Junta/FEGA y distingue hechos comprobados de contratos pendientes:
+
+1. [Auditoría crítica y marco vigente REAFA/CUE](docs/normativa/AUDITORIA-INFORME-EXTERNO-2026-11-09.md)
+2. [Matriz inicial campo a campo fitosanitarios, RD 1311 Anexo III y UE 2023/564](docs/normativa/MATRIZ-FITOSANITARIOS-BASE-2026-11-09.md)
+3. [Arquitectura Expo/React, offline, benchmark y migración V1→V2](docs/arquitectura/DECISIONES-MULTIPLATAFORMA-Y-MIGRACION-2026-11-09.md)
+
+**BLOQUEO:** aún falta extraer y mapear íntegramente el XLSX oficial Anexo V 3.11 y DOCX Anexo VI IUWS 3.11.4. No desarrollar transportes IUWS ni declarar validez administrativa antes de esa revisión y autorización oficial.
