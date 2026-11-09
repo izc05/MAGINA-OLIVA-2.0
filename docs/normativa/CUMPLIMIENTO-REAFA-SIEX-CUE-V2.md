@@ -128,3 +128,47 @@ Nota: es un **diagrama conceptual**, no especifica enlaces de red ni asegura que
 5. **RGPD, encargado/responsable y plazos adicionales**: revisión antes de producción.
 
 **No-GO:** no iniciar IUWS real, producción ni migraciones del backend histórico hasta superar estos bloqueos.
+
+
+## 7. Adenda normativa (09/11/2026): diferenciar hoy, 2027 y siguiente PAC
+
+**Contraste adicional con fuentes primarias consultadas el 09/11/2026:**
+
+| Condición | Situación temporal exacta | Consecuencia de software |
+|---|---|---|
+| Registro de tratamientos de profesionales agrarios | Obligatorio ya conforme RD 1311/2012, art. 16, y su Anexo III; la posibilidad del soporte papel subsiste hasta **31/12/2026** por RD 1039/2025, DF primera | Permitir anotar ahora; no calificar el registro como oficialmente transmitido solo por estar digitalizado |
+| Registro informático de tratamientos | La Junta lo fija desde **01/01/2027** | No imponer como si hubiera vencido el 01/01/2026 |
+| CUE general | Voluntario en el actual marco salvo imposición sectorial (RD 1054/2022, art. 9.1) | Usar reglas por actividad, no un interruptor universal de obligatoriedad |
+| Umbrales **>30 ha cultivos permanentes+tierras de cultivo**, **>5 ha regadío**, **>0,1 ha invernadero** | **Persisten en la disposición final octava 2 del RD 1054/2022 para el siguiente período de programación de la PAC**; no son calendario general exigible en 2026 | Conservar el motor de evaluación por fechas y superficies para el futuro, marcado como `NEXT_PAC`, **no activarlo hoy como obligación 2026** |
+| Excepción aportes nutrientes | Junta y RD 934/2025 prevén exenciones, entre otras explotaciones **<=5 ha de cultivos permanentes+tierras de cultivo y <=1 ha regadío**, con particularidades para pastos fertilizados e invernaderos | **No extrapolar esta excepción a los fitosanitarios** |
+| Plan abonado | La Junta fija **01/09/2026** en supuestos aplicables; excluye determinadas unidades de secano de hasta 10 ha y pastos no fertilizados | Evaluación por unidad de producción, cultivo y excepciones |
+| Código SIEX | RD 1054/2022 art. 2.1.i: **`ES` + 12 dígitos** (14 caracteres), asignado automáticamente por SIEX cuando se incorpora una nueva explotación | `siexCode` debe venir de fuente autorizada y guardar su procedencia; una regex no constituye verificación oficial |
+
+**Textos contrastados:**
+- RD 1054/2022 consolidado, arts. 2.1.i, 4.3, 9.1, 10.2–3 y disposición final octava 2: https://www.boe.es/eli/es/rd/2022/12/27/1054/con
+- RD 1311/2012 art. 16.1, modificado por RD 1039/2025 DF primera: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-23421
+- Junta Cuaderno, obligaciones y versión V9: https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/areas/agricultura/cuaderno-explotacion.html
+- FEGA Anexos V–X: https://www.fega.gob.es/es/siex/documentacion-tecnica-agricola-siex
+
+### Pruebas de cumplimiento que no se deben omitir
+
+| Prueba | Entrada ficticia | Resultado esperado |
+|---|---|---|
+| T-01 Regla obsoleta | 35 ha olivar secano, 09/11/2026 | NO aparece «CUE general obligatorio desde 2024/25» |
+| T-02 Regla futura | 35 ha olivar secano, siguiente período PAC, condicionado a futura normativa vigente | Detecta umbral en modo `FUTURE_RULE_REQUIRES_CONFIRMATION`; no impone fecha inventada |
+| T-03 Fitosanitario | Tratamiento profesional agrario, 11/2026 | Registro exigible; papel aún permitido según normativa aplicable |
+| T-04 Plazo | Tratamiento profesional agrario, 01/2027 | Registro digital requerido; transmisión/acuse oficial separados de guardado |
+| T-05 Excepción nutrientes | Explotación 3 ha secano sin otras superficies especiales, aporte fertilizante | Evaluación por umbral y excepciones de fertilización, no por régimen CUE general |
+| T-06 Plan abonado | Unidad 8 ha secano, 10/2026 | Evaluación de excepción según RD y características de unidad |
+| T-07 Código SIEX | Usuario introduce `ES123456789012` sin documento oficial | Formato válido, **estado no verificado**, sin convertirlo en alta administrativa |
+| T-08 REAFA no vinculado | Usuario crea finca y tratamiento borrador sin REAFA | Guardado privado permitido, envío/confirmación administrativa bloqueados |
+| T-09 Rol interno | Cuenta con permiso `manager` sin autorización IUWS | Puede operar según permisos privados, pero NO transmitir oficialmente |
+| T-10 IUWS timeout | Petición ficticia sin acuse | Estado `UNKNOWN`; sin declarar «aceptado», conciliación antes de reintento |
+
+### Distinción jurídica adicional: información disponible y remisión a la Administración
+
+El RD 1054/2022 art. 10.2 contempla decisiones del titular sobre poner a disposición de la Administración información del CUE a través del REA. **No inferir** de ello que toda captura de datos en Mágina Olivo se envía automáticamente a SIEX, ni que una eventual obligación sectorial de suministro está dispensada. El art. 16 RD 1311/2012 y los procedimientos de IUWS deben revisarse conjuntamente con el alcance concreto y las autorizaciones.
+
+En Andalucía la página CUE indica que existen **dos vías de comunicación IUWS**: productor individual y habilitado. La misma página explica que, si el desarrollador no se habilita, puede actuar como mero proveedor del software; **la operativa exacta de la vía productor individual y el sujeto certificado en llamadas necesitan confirmación formal**. No anunciar que un proveedor no habilitado puede transmitir como entidad habilitada, pero tampoco borrar la vía individual oficialmente mencionada.
+
+**NO-GO:** cambios que mezclen el estado de registro privado con «presentado oficialmente» o que utilicen las reglas de 2024/2025 como disparadores actuales de obligatoriedad.
