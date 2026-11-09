@@ -44,3 +44,21 @@ No construir un clon de toda Olearia. Competir inicialmente con el flujo **«del
 - **Producto V2**: primer recorrido de una explotación ficticia, 2 recintos de olivar, tratamiento, gasto y pesada conectados a su ficha y revisión; prueba en móvil y web.
 - **Normativa**: mapa RD/UE/Junta ↔ FEGA V/VII ↔ DTO IUWS VI ↔ pruebas.
 - **Negocio**: 5–10 entrevistas a agricultores sobre tiempo de apuntes, cuaderno usado, cooperativa, documentación y valor del producto. Priorizar con datos, no solo impresiones.
+
+
+## Hallazgo adicional: arquitectura declarada públicamente (09/11/2026)
+
+**Fuentes del propio proveedor (evidencia documental, no auditoría de código ni de producción):**
+- Política de privacidad https://olearia.io/privacy (apartados 2, 3.3, 6.1, 9). Declara **Supabase Auth, PostgreSQL**, plataforma de facturación Stripe/Redsys, servidor Hetzner para base de datos, datos GeoJSON de parcelas, datos SIEX y OCR local de tickets. Enumera procesadores de IA **Cerebras/Groq, Mistral, Google Gemini, OpenRouter y Ollama**. Algunos proveedores están fuera del EEE y el texto dice emplear medidas de transferencia internacional; su declaración de «datos en UE» requiere entenderse según tipo de dato/proveedor, no reproducirse como garantía auditada.
+- Web corporativa https://aixa-ai.com/ (apartado «Stack Tecnológico Principal»): la propia empresa identifica **PWA offline-first**, RAG, agentes con varios modelos, datos Copernicus, pipelines ETL/ELT y plataformas cloud-native.
+- Google Play https://play.google.com/store/apps/details?id=io.olearia.agritech : paquete Android `io.olearia.agritech`; anuncia dictado, IA y offline; **no prueba si APK es envoltorio PWA/TWA/Capacitor o desarrollo nativo**.
+
+### Implicación nueva para Mágina Olivo
+
+1. **No usar «Supabase» ni «tener IA» como diferenciación competitiva**: ya lo declara Olearia.
+2. **OCR de tickets no es una ventaja inédita**: su propia política afirma que usa modelo local para extraer peso/variedad/fecha/nº albarán. El diferencial, si existe, debe demostrarse mediante exactitud por cooperativa, revisión humana, operaciones contables enlazadas, documentos y uso sin conexión.
+3. **PWA no equivale a conocer el código fuente Android**: hace falta APK legítima para examinar manifiesto, dependencias y componentes (sin eludir controles), y pruebas funcionales en demo autorizada.
+4. **La IA usada como herramienta de programación NO está demostrada**: que la empresa desarrolle soluciones IA y utilice modelos IA en el producto no implica que todo el software haya sido generado con asistentes de programación.
+5. Antes de codificar un reemplazo, evaluar con pilotos el grado de integración de datos realmente útil al agricultor: SIGPAC + tratamiento CUE + recibo cooperativa + balance finca + permisos y auditoría.
+
+**Próxima evidencia solicitada:** APK o conjunto de splits instalado, revisión estática de componentes y bibliotecas, prueba controlada de experiencia/offline en cuenta propia; separar lo CONFIRMADO, DECLARADO y NO VERIFICADO.
