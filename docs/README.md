@@ -9,6 +9,7 @@
 
 ### Inicio y objetivos
 - [¿Estamos listos para construir? Puertas GO/NO-GO y vacíos normativos/técnicos](decisiones/HOJA-DE-RUTA-Y-BLOQUEOS-ANTES-DE-DESARROLLAR-2026-11-09.md)
+- [Estudio de implementación normativa CUE: modelo, evaluador de reglas, QA y bloqueos IUWS (09/11/2026)](decisiones/ESTUDIO-IMPLEMENTACION-NORMATIVA-CUE-2026-11-09.md)
 - [Plan maestro V2 REAFA/CUE, arquitectura y primera vertical](PLAN-MAGINA-OLIVO-V2-REAFA-CUE.md)
 
 ### Normativa y fuentes oficiales
