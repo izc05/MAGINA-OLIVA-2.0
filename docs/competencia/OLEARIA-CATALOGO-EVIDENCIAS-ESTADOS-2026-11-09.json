@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-11-09",
+  "source": "user-provided Olearia Agritech.zip in private Drive",
+  "archive_sha256": "d4c232f8b687e4bd02eccd041917c85f7419ebd0ff14a5205ea18d967af791d6",
+  "scope": "Static metadata only; no source code, API, servers, pentest or runtime",
+  "license": "Analyst-authored research facts only; no proprietary binary or code redistributed",
+  "grades": {
+    "E1": "Binary manifest/resources/classes verified",
+    "E2": "Declared in packaged configuration",
+    "E3": "String-level indicator in bytecode",
+    "E4": "Vendor public statement, not independently tested",
+    "E5": "Reproduced functional test (none yet)",
+    "E0": "Unknown/unverified"
+  },
+  "counts": {
+    "apk_parts": 4,
+    "dex_files": 9,
+    "dex_class_definitions": 58066,
+    "arm64_shared_libraries": 34,
+    "permissions_declarations": 40,
+    "app_links_https_prefixes": 31,
+    "mlkit_tflite_models": 3,
+    "plugin_names_in_expo_config": 19
+  },
+  "facts": [
+    {
+      "id": "APK-001",
+      "scope": "identity",
+      "claim": "Paquete io.olearia.agritech, versionName 1.5.2, versionCode 40",
+      "grade": "E1",
+      "evidence": "base.apk/AndroidManifest.xml",
+      "next": "compare current Play version"
+    },
+    {
+      "id": "APK-002",
+      "scope": "android",
+      "claim": "minSdk 24, targetSdk 36, compileSdk 36",
+      "grade": "E1",
+      "evidence": "base.apk/AndroidManifest.xml",
+      "next": "device test on representative Android"
+    },
+    {
+      "id": "APK-003",
+      "scope": "framework",
+      "claim": "React Native/Expo y Hermes presente en binarios nativos y bytecode",
+      "grade": "E1",
+      "evidence": "DEX, libreactnative.so, libhermesvm.so, assets/index.android.bundle",
+      "next": "confirm UI behavior in demo"
+    },
+    {
+      "id": "APK-004",
+      "scope": "framework",
+      "claim": "Expo SDK declarado 57.0.0",
+      "grade": "E2",
+      "evidence": "base.apk/assets/app.config",
+      "next": "do not assume exact npm patch versions"
+    },
+    {
+      "id": "APK-005",
+      "scope": "map",
+      "claim": "MapLibre presente como librería y paquete Android",
+      "grade": "E1",
+      "evidence": "libmaplibre.so y 1081 class_defs MapLibre",
+      "next": "test map layers with authorized data"
+    },
+    {
+      "id": "APK-006",
+      "scope": "map",
+      "claim": "Palabras WMS, WMTS, PNOA, SIGPAC, GeoJSON en Hermes",
+      "grade": "E3",
+      "evidence": "counts in Hermes; no source map",
+      "next": "validate real map sources and legal terms"
+    },
+    {
+      "id": "APK-007",
+      "scope": "offline",
+      "claim": "NetInfo, AsyncStorage, SecureStore y TaskManager empaquetados",
+      "grade": "E1",
+      "evidence": "class_defs DEX",
+      "next": "offline force-stop/reconnect functional tests"
+    },
+    {
+      "id": "APK-008",
+      "scope": "offline",
+      "claim": "Referencias queryClient, persistQuery, idempotency, syncStatus en Hermes",
+      "grade": "E3",
+      "evidence": "substring counts in Hermes",
+      "next": "test durable writes and duplicate handling"
+    },
+    {
+      "id": "APK-009",
+      "scope": "offline",
+      "claim": "Motor de almacenamiento y sync privado de actividades reales",
+      "grade": "E0",
+      "evidence": "not exposed by binary metadata",
+      "next": "do not infer SQLite absence; test"
+    },
+    {
+      "id": "APK-010",
+      "scope": "agronomy",
+      "claim": "Palabras ROPO, BBCH, SIEX, REAFA, SIGPAC en Hermes",
+      "grade": "E3",
+      "evidence": "bytecode substring counts",
+      "next": "test corresponding forms with fictional data"
+    },
+    {
+      "id": "APK-011",
+      "scope": "compliance",
+      "claim": "Aceptación real IUWS por Junta",
+      "grade": "E0",
+      "evidence": "backend unavailable; no administrative acknowledgement inspected",
+      "next": "require authorized official receipt"
+    },
+    {
+      "id": "APK-012",
+      "scope": "documents",
+      "claim": "ML Kit Document Scanner y Barcode Scanner presentes",
+      "grade": "E1",
+      "evidence": "DEX classes, activities, models",
+      "next": "test synthetic documents and barcode"
+    },
+    {
+      "id": "APK-013",
+      "scope": "documents",
+      "claim": "OCR texto y localía de inferencia",
+      "grade": "E0",
+      "evidence": "document scanner != text recognition",
+      "next": "offline test with synthetic vale; provider commercial claim E4"
+    },
+    {
+      "id": "APK-014",
+      "scope": "voice",
+      "claim": "expo-speech-recognition declarado",
+      "grade": "E2",
+      "evidence": "Expo plugin list and RECORD_AUDIO manifest",
+      "next": "test dictation, confirmation and permissions"
+    },
+    {
+      "id": "APK-015",
+      "scope": "commercial",
+      "claim": "RevenueCat, Google Play Billing 8.3.0, Amazon IAP SDK incluidos",
+      "grade": "E1",
+      "evidence": "DEX, manifest and metadata",
+      "next": "verify active purchase flows with own account if desired"
+    },
+    {
+      "id": "APK-016",
+      "scope": "privacy",
+      "claim": "SecureStore sharedpref excluido de cloud backup y device transfer",
+      "grade": "E1",
+      "evidence": "backup rules XML",
+      "next": "data restore test and privacy audit for own V2"
+    },
+    {
+      "id": "APK-017",
+      "scope": "privacy",
+      "claim": "40 permisos, 14 activities, 10 providers, 10 services, 6 receivers",
+      "grade": "E1",
+      "evidence": "AndroidManifest.xml",
+      "next": "evaluate requested vs granted at runtime"
+    },
+    {
+      "id": "APK-018",
+      "scope": "deeplinks",
+      "claim": "31 prefijos HTTPS declarados, autoVerify true y esquema olearia",
+      "grade": "E1",
+      "evidence": "MainActivity intent filters",
+      "next": "test assetlinks and pm get-app-links"
+    },
+    {
+      "id": "APK-019",
+      "scope": "deeplinks",
+      "claim": "Asociación verificada de dominios en dispositivo",
+      "grade": "E0",
+      "evidence": "no assetlinks/Android status verified",
+      "next": "with own device, check Android app link status"
+    },
+    {
+      "id": "APK-020",
+      "scope": "updates",
+      "claim": "expo-updates.ENABLED=false en este build",
+      "grade": "E1",
+      "evidence": "application meta-data",
+      "next": "do not infer absence of server-driven feature flags"
+    },
+    {
+      "id": "APK-021",
+      "scope": "authoring",
+      "claim": "Código fuente de Olearia programado mediante IA generativa",
+      "grade": "E0",
+      "evidence": "not inferable from binary or feature list",
+      "next": "no assertion possible without developer evidence"
+    },
+    {
+      "id": "APK-022",
+      "scope": "server",
+      "claim": "Esquema PostgreSQL/RLS de producción",
+      "grade": "E0",
+      "evidence": "privacy policy declaration is not schema audit",
+      "next": "do not attempt unauthorized access"
+    }
+  ],
+  "human_report": "OLEARIA-DOSSIER-MAESTRO-EVIDENCIAS-2026-11-09.md",
+  "qa_report": "OLEARIA-PRUEBAS-CONTROLADAS-Y-DECISIONES-V2-2026-11-09.md",
+  "privacy_note": "Do not upload APK, Hermes bytecode, reconstructed code, private endpoints, credentials, documents or personal data."
+}
