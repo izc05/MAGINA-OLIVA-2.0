@@ -8,6 +8,7 @@
 ## Índice de referencia
 
 ### Inicio y objetivos
+- [¿Estamos listos para construir? Puertas GO/NO-GO y vacíos normativos/técnicos](decisiones/HOJA-DE-RUTA-Y-BLOQUEOS-ANTES-DE-DESARROLLAR-2026-11-09.md)
 - [Plan maestro V2 REAFA/CUE, arquitectura y primera vertical](PLAN-MAGINA-OLIVO-V2-REAFA-CUE.md)
 
 ### Normativa y fuentes oficiales
