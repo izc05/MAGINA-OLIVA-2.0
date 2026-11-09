@@ -20,6 +20,7 @@
 - [Registro de fuentes, contradicciones y pendientes FEGA](normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
 
 ### Competencia y posicionamiento
+- [Olearia Agritech: análisis estático de los cuatro APK (09/11/2026)](competencia/OLEARIA-APK-ANALISIS-ESTATICO-2026-11-09.md)
 - [Olearia Agritech: comparación, evidencia y diferenciación estratégica V2 (09/11/2026)](competencia/OLEARIA-COMPETENCIA-Y-DIFERENCIACION-2026-11-09.md)
 
 ### Integraciones y autorización administrativa
