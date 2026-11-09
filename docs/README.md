@@ -20,6 +20,7 @@
 - [Registro de fuentes, contradicciones y pendientes FEGA](normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
 
 ### Competencia y posicionamiento
+- [Olearia: contraste de web comercial, privacidad, seguridad declarada y APK 1.5.2](competencia/OLEARIA-CONTRASTE-WEB-APK-Y-SEGURIDAD-2026-11-09.md)
 - [Olearia APK: tercera inspección — composición del paquete, seguridad, respaldo, privacidad y arquitectura](competencia/OLEARIA-APK-PROFUNDIZACION-ARQUITECTURA-2026-11-09.md)
 - [Olearia Hermes: mapa de indicios SIEX, SIGPAC, IA, OCR, cooperativas y cautelas](competencia/OLEARIA-BYTECODE-INDICIOS-FUNCIONALES-2026-11-09.md)
 - [Olearia APK: auditoría estática ampliada — manifiesto, DEX, módulos, pagos, privacidad y límites](competencia/OLEARIA-APK-AUDITORIA-AMPLIADA-2026-11-09.md)
