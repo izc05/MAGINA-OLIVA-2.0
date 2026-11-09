@@ -20,11 +20,16 @@
 - [Registro de fuentes, contradicciones y pendientes FEGA](normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
 
 ### Competencia y posicionamiento
+- [Olearia APK: tercera inspección — composición del paquete, seguridad, respaldo, privacidad y arquitectura](competencia/OLEARIA-APK-PROFUNDIZACION-ARQUITECTURA-2026-11-09.md)
+- [Olearia Hermes: mapa de indicios SIEX, SIGPAC, IA, OCR, cooperativas y cautelas](competencia/OLEARIA-BYTECODE-INDICIOS-FUNCIONALES-2026-11-09.md)
 - [Olearia APK: auditoría estática ampliada — manifiesto, DEX, módulos, pagos, privacidad y límites](competencia/OLEARIA-APK-AUDITORIA-AMPLIADA-2026-11-09.md)
 - [Olearia APK: inventario estructurado JSON de 40 permisos, 34 bibliotecas nativas y 31 enlaces](competencia/OLEARIA-APK-INVENTARIO-ESTATICO-2026-11-09.json)
 - [Olearia: pruebas controladas pendientes y criterios de decisión para Mágina Olivo V2](competencia/OLEARIA-PRUEBAS-CONTROLADAS-Y-DECISIONES-V2-2026-11-09.md)
 - [Olearia Agritech: análisis estático de los cuatro APK (09/11/2026)](competencia/OLEARIA-APK-ANALISIS-ESTATICO-2026-11-09.md)
 - [Olearia Agritech: comparación, evidencia y diferenciación estratégica V2 (09/11/2026)](competencia/OLEARIA-COMPETENCIA-Y-DIFERENCIACION-2026-11-09.md)
+
+### Decisiones derivadas de la competencia
+- [Decisiones técnicas Mágina Olivo V2 derivadas de la auditoría APK Olearia](decisiones/DECISIONES-V2-TRAS-AUDITORIA-OLEARIA-2026-11-09.md)
 
 ### Integraciones y autorización administrativa
 - [Alta de CUE comercial, productor individual, entidad habilitada e IUWS](integraciones/ALTA-CUE-AUTORIZACIONES-IUWS-ANDALUCIA.md)
