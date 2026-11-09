@@ -19,6 +19,9 @@
 - [Correspondencia con formularios oficiales Junta Andalucía V9](normativa/FORMULARIOS-ANDALUCIA-V9-TRAZABILIDAD.md)
 - [Registro de fuentes, contradicciones y pendientes FEGA](normativa/REGISTRO-FUENTES-Y-DISCREPANCIAS-2026-11-09.md)
 
+### Competencia y posicionamiento
+- [Olearia Agritech: comparación, evidencia y diferenciación estratégica V2 (09/11/2026)](competencia/OLEARIA-COMPETENCIA-Y-DIFERENCIACION-2026-11-09.md)
+
 ### Integraciones y autorización administrativa
 - [Alta de CUE comercial, productor individual, entidad habilitada e IUWS](integraciones/ALTA-CUE-AUTORIZACIONES-IUWS-ANDALUCIA.md)
 
